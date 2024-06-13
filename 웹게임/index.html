@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매칭 게임</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scoreboard">
+        <div class="high-score">하이스코어: <span id="high-score">0</span></div>
+        <div class="current-score">점수: <span id="current-score">0</span></div>
+    </div>
+    <div class="game-container">
+        <div class="game-board" id="game-board">
+            <!-- 카드 그리드가 여기에 표시됩니다 -->
+        </div>
+        <div class="game-info">
+            <div class="timer">시간: <span id="timer">300</span>초</div>
+            <div class="stage">단계: <span id="stage">1</span></div>
+            <button id="pause-button">일시정지</button>
+            <div id="fever-mode" class="fever-hidden">FEVER!</div>
+            <img id="fever-character" class="fever-hidden" src="images/bbanana.png" alt="Fever Character">
+        </div>
+    </div>
+    <audio id="click-sound" src="sounds/click.mp3" preload="auto"></audio>
+    <audio id="fever-sound" src="sounds/fever.mp3" preload="auto"></audio>
+    <audio id="timer-60-sound" src="sounds/timer_60.mp3" preload="auto"></audio>
+    <audio id="timer-30-sound" src="sounds/timer_30.mp3" preload="auto"></audio>
+    <audio id="game-over-sound" src="sounds/game_over.mp3" preload="auto"></audio>
+    <audio id="first-blood-sound" src="sounds/first_blood.mp3" preload="auto"></audio>
+    <audio id="double-kill-sound" src="sounds/double_kill.mp3" preload="auto"></audio>
+    <audio id="triple-kill-sound" src="sounds/triple_kill.mp3" preload="auto"></audio>
+    <audio id="quadra-kill-sound" src="sounds/quadra_kill.mp3" preload="auto"></audio>
+    <audio id="penta-kill-sound" src="sounds/penta_kill.mp3" preload="auto"></audio>
+    <audio id="bgm" src="sounds/bgm.mp3" preload="auto" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>

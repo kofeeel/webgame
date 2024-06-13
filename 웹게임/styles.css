@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'MaplestoryOTFBold';
+    src: url('font/Maplestory OTF Bold.otf') format('opentype');
+}
+
+body {
+    font-family: 'MaplestoryOTFBold', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('image/bbackground.png');
+    background-size: cover;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #000;
+    color: #ff0;
+    font
+    font-size: 24px;
+    padding: 10px;
+    font-family: 'MaplestoryOTFBold', Arial, sans-serif;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.game-board .card {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: 1px solid #000;
+    background-size: cover;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-info div, .game-info button {
+    margin-bottom: 10px;
+}
+
+#pause-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #000;
+    color: #ff0;
+    border: 2px solid #ff0;
+    font-family: 'MaplestoryOTFBold', Arial, sans-serif;
+}
+
+#fever-mode {
+    font-size: 32px;
+    color: red;
+    display: none;
+}
+
+.fever-hidden {
+    display: none;
+}
+
+.fever-active {
+    display: block;
+}
+
+#fever-character {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
